@@ -14,7 +14,7 @@ public protocol Web3Provider {
     func sendAsync(_ requests: JSONRPCrequestBatch, queue: DispatchQueue) -> Promise<JSONRPCresponseBatch>
     var network: Networks? {get set}
     var attachedKeystoreManager: KeystoreManager? {get set}
-    var url: URL {get}
+    var url: URL {get set}
     var session: URLSession {get}
 }
 
